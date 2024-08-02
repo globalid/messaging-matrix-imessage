@@ -100,13 +100,13 @@ func (user *User) tryAutomaticRoomMigrationToDirectChats() {
 
 	user.zlog.Debug().Msg("Automatic room migration enabled")
 
-	portals:= user.bridge.GetAllPortals()
-	directs:= user.getDirectChats()
-	userId:= user.GetMXID()
-	usersDirects:= directs[userId]
-	roomsToMigrate:= []id.RoomID{}
+	portals := user.bridge.GetAllPortals()
+	directs := user.getDirectChats()
+	userId := user.GetMXID()
+	usersDirects := directs[userId]
+	roomsToMigrate := []id.RoomID{}
 
-	for _, portal:= range portals {
+	for _, portal := range portals {
 		if !contains(usersDirects, portal.MXID) {
 			roomsToMigrate = append(roomsToMigrate, portal.MXID)
 		}

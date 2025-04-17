@@ -14,7 +14,7 @@ require (
 	go.mau.fi/util v0.2.1
 	golang.org/x/crypto v0.18.0
 	golang.org/x/exp v0.0.0-20240112132812-db7319d0e0e3
-	golang.org/x/image v0.15.0
+	golang.org/x/image v0.18.0
 	maunium.net/go/mauflag v1.0.0
 	maunium.net/go/maulogger/v2 v2.4.1
 	maunium.net/go/mautrix v0.16.2
